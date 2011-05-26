@@ -1,0 +1,16 @@
+This is a short overview on wich platforms and
+distributions ccollect-config is tested.
+
+Linux:
+----------------------------------------------
+Gentoo:		x86(working),
+Debian:		not tested
+RedHat:		not tested
+SuSE:		not tested
+
+*NIX:
+----------------------------
+OpenBSD:	x86(working),
+NetBSD:		not tested
+FreeBSD:	not tested
+Solaris:	not tested

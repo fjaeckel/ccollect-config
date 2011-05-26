@@ -1,0 +1,33 @@
+################################################################################
+#   ccollect-config.sh, Frederic Jaeckel, 2006-07-30
+################################################################################
+
+ccollect-config.sh is a dialog based frontend to ccollect[1] of 
+Nico Schottelius.
+
+With ccollect-config.sh, you can configure your whole ccollect environment
+from scratch without copying the whole files, directories by yourself.
+Managing sources and intervals is now easier.
+
+Requirements:
+    - a POSIX conform shell
+    - dialog [2]
+    - ccollect
+    - the $EDITOR environment variable
+
+Future:
+    - Xdialog will be implemented (needs more testing)
+    - more flexibility
+
+Getting ccollect-config:
+    git: cg-clone https://projects.0xf00.de/gitrepo/ccollect-config.git/
+    web: http://0xf00.de/ccollect-config.html 
+
+For getting in contact with me, please send me a mail to:
+        `jaeckelf |at| refuzed |dot| org`.
+
+
+################################################################################
+#   [1] http://linux.schottelius.org/ccollect/
+#   [2] http://invisible-island.net/dialog/dialog.html
+

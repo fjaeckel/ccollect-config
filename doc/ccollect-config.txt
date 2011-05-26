@@ -1,0 +1,75 @@
+ccollect-config - Installing, Configuring and Using
+==================================================
+Frederic Jaeckel <jaeckelf__@__refuzed.org>
+0.1, for ccollect 0.4.2
+:Author Initials: FJ
+
+
+Introduction
+------------
+ccollect-config is a dialog based frontend to link:http://linux.schottelius.org/ccollect/doc/ccollect.html[ccollect] of Nico Schottelius.
+
+Requirements
+------------
+- dialog -
+  link:http://invisible-island.net/dialog/dialog.html[http://invisible-island.net/dialog/dialog.html]
+- $EDITOR environment variable
+- a bourne shell to execute it
+
+Future of ccollect-config
+-------------------------
+- getting more test results to improve the portability
+- implementing Xdialog for the GUI fetish people. :-P
+
+Downloading:
+------------
+
+git:
+~~~~
+---------------------------------------------------------------
+cg-clone https://projects.0xf00.de/gitrepo/ccollect-config.git/
+---------------------------------------------------------------
+
+
+web:
+~~~~
+You can check out a stable gzip'd tarfile at
+link:http://0xf00.de/ccollect-config.html[http://0xf00.de/ccollect-config.html]
+
+Installing:
+-----------
+You can copy it to a bin/ directory in your $PATH and chmod 0755 it.
+A simple example:
+-----------------------------------------------------------------
+wget http://0xf00.de/ccollect-config-0.1.tar.gz
+tar xvzf ccollect-config-0.1.tar.gz
+cd ccollect-config-0.1
+sudo cp ccollect-config-0.1.sh /usr/local/bin/
+sudo chmod 0755 /usr/local/bin/ccollect-config-0.1.sh
+-----------------------------------------------------------------
+
+
+FAQ:
+----
+Why does ccollect-config exit due to the fact $EDITOR is not set?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ccollect-config need it for editing the exclude lists. It's better to check
+this at the start of ccollect-config to prevent abnormal program terminations.
+A good solution is to set $EDITOR in your .profile or /etc/profile.
+----------------------------------------------------------------
+export EDITOR="/usr/bin/vim"
+----------------------------------------------------------------
+or
+----------------------------------------------------------------
+echo "export EDITOR=/usr/bin/vim >> ~/.profile"
+----------------------------------------------------------------
+
+ccollect-config exits with the Message "please submit a bug report". What shall I do?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can send me an email or visit me and my mates at freenode in #cLinux for
+more answers.
+
+Bugs:
+-----
+- typing Strg + C while adding a source can delete all sources
+- no validity checks in the source names.. you can write/read to/from /

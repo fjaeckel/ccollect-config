@@ -1,0 +1,17 @@
+- tar ccollect-config releases in a seperate directory
+- create a menu for `list_backup_sources` for creating, editing and deleting backup sources
+- changing `add_interval` to a free typeable field to define individual intervall names
+    - use the name of the interval instead of "this interval"
+- checking the validity of the source name.. actually it's possible to write to /
+- error checks for ^C, actually telmich killed all his sources with ^C
+    - check for `rm -rf`
+- check for security holes
+- write some (small) (asciidoc) documentation (at least a manpage)
+- finish initial version
+- test with other developers
+- release
+- test with end users
+- fix
+- test with other developers
+- release
+- ...
